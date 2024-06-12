@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cộng đồng hay hỏi</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="current-email"></h1>
+        <div class="container">
+            <h1 class="main-header">Viết một CFS mới</h1>
+            <textarea id="editor"></textarea>
+            <button type="submit" class="submit-btn app-btn">Đăng ngay</button>
+        </div>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    <script src="./postData.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+    
+</body>
+</html>
