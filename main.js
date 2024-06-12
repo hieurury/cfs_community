@@ -20,7 +20,6 @@ appBtn.addEventListener('click', () => {
         window.location.href = './createBlog.html'
     } else {
         errorMessage.classList.remove('d-none');
-        console.log(false);
     }
 })
 //=========================================

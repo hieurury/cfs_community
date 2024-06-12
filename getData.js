@@ -18,7 +18,6 @@ fetch(url)
                         <div class="blog-time">vào: ${html[0]}</div>
                     </div>`
         });
-        console.log(htmls);
         container.innerHTML = htmls.join('');
     })
     .catch(error => {
