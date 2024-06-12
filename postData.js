@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         submitBtn.addEventListener('click', function(e) {
             submitData();
+            window.location.href = './blog.html';
         });
         window.addEventListener('beforeunload', () => {
             localStorage.removeItem('email');
